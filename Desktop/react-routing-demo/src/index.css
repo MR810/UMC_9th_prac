@@ -1,0 +1,480 @@
+/* General Styles */
+.root-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.header-container {
+    background-color: #21244b;
+}
+
+.header-wrap {
+    height: 70px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-image {
+    width: auto;
+    height: auto;
+    color: white;
+    border: none;
+}
+
+.log-button {
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 20px;
+    border: none;
+    background: none;
+    color: yellow;
+    font-family: sans-serif;
+    width: 100px;
+    font-weight: 800;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 15px;
+    width: 100px;
+}
+
+.logout-button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-link:hover,
+.logout-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Main Page Styles */
+.mainPage-body {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.mainPage-inputSection {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    background-color: #22254b;
+    display: flex;
+    justify-content: center;
+    transition: height 0.3s ease;
+    margin: 20px;
+    padding: 20px;
+}
+
+.button {
+    background: #ffe32a;
+    border: 2px;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mainPage-inputSection input {
+    width: 100%;
+    max-width: 500px;
+    height: 30px;
+    font-size: 20px;
+    border-color: #ffffff;
+    border-width: 1px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.movies-container {
+    background-color: #21244b;
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.movie-card {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    background-color: #373b69;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.app-container {
+    background-color: #22254b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-container {
+    width: 250px;
+    margin: 16px;
+    background-color: #373b69;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.movie-container .overview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.movie-container:hover .overview {
+    display: flex;
+}
+
+.overview p {
+    margin: 0;
+    max-width: 80%;
+    font-family: sans-serif;
+}
+
+.movie-container img {
+    max-width: 100%;
+}
+
+.movie-info {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.movie-info h4 {
+    margin: 0;
+}
+
+.movie-info span {
+    margin: 3px;
+}
+
+/* Movie Detail Page */
+.movie-detail-container {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(33, 36, 75, 0.3);
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.movie-detail-container h4 {
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    padding-bottom: 25px;
+}
+
+.movie-detail-container p {
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.movie-detail-content {
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: white;
+    max-width: 600px;
+}
+
+.movie-detail-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 36, 75, 0.85);
+    z-index: 0;
+}
+
+.poster-container {
+    margin-left: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.poster-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pageAll {
+    background-color: #21244b;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.page {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 20px;
+    background-color: #21244b;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.titleWrap {
+    margin-top: 87px;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.contentWrap {
+    margin-top: 26px;
+    flex: 1;
+    width: 100%;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.inputTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.inputWrap {
+    display: flex;
+    border-radius: 50px;
+    padding: 16px;
+    margin-top: 8px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.inputWrap:focus-within {
+    border: 1px solid;
+}
+
+.input {
+    width: 100%;
+    max-width: 700px;
+    outline: none;
+    border: none;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.input::placeholder {
+    color: #dadada;
+}
+
+.errorMessageWrap {
+    margin-top: 6px;
+    color: red;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.login-go {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.bottomButton {
+    width: 100%;
+    max-width: 700px;
+    height: 48px;
+    outline: none;
+    border: none;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 65px;
+    color: black;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.bottomButton:disabled {
+    background-color: white;
+    color: #dadada;
+}
+
+.credits h4 {
+    margin-top: 20px;
+}
+
+.credits ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.credits ul li {
+    margin-bottom: 5px;
+}
+
+.cast-list .cast-item,
+.crew-list .crew-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cast-list .cast-item img,
+.crew-list .crew-item img {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.actor-info {
+    color: white;
+    font-family: sans-serif;
+}
+
+.credit-name,
+.character-name {
+    font-size: 14px;
+}
+
+.character-name {
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mainPage-inputSection input {
+        max-width: 100%;
+    }
+
+    .movies-container {
+        flex-direction: column;
+    }
+
+    .movie-card {
+        width: 100%;
+    }
+
+    .app-container {
+        flex-direction: column;
+    }
+
+    .movie-container {
+        width: 100%;
+    }
+
+    .movie-detail-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .movie-detail-content {
+        max-width: 100%;
+    }
+
+    .poster-container {
+        margin: 20px 0;
+        max-width: 100%;
+    }
+
+    .contentWrap,
+    .inputWrap,
+    .bottomButton {
+        max-width: 100%;
+    }
+}
+
